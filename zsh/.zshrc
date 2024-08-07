@@ -51,5 +51,11 @@ function plugin-load {
 	zsh-users/zsh-autosuggestions
       )
 
+#start ssh agent
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(ssh-agent -s)"
+fi
+
 #load the plugins
 plugin-load $repos
+
