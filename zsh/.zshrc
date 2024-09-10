@@ -13,7 +13,7 @@ bindkey -v
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias icat='kitten icat'
-
+alias uqvpn="sudo echo \"Sudo first\" && openconnect https://vpn.uq.edu.au --useragent=AnyConnect --cookieonly | sudo openconnect https://vpn.uq.edu.au --useragent=AnyConnect --cookie-on-stdin"
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/mayv/.zshrc'
@@ -59,3 +59,6 @@ fi
 #load the plugins
 plugin-load $repos
 
+export TERM=xterm-256color
+export PATH=~/matlab/bin:$PATH
+export BROWSER=firefox
