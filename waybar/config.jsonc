@@ -1,16 +1,16 @@
 {
   "height": 21,
   "modules-left": ["river/tags"],
-  "modules-center": [],
+  "modules-center": ["clock"],
   "modules-right": [
     "network",
     "battery",
-    "clock",
   ],
-  "clock": {
+ "clock": {
             "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-            "format": "{:%a, %d %b, %I:%M %p}"
-   },
+            "format": "{:%a %d %b %H:%M}",
+            "timezone": "Australia/Brisbane"
+ },
   "network": {
     "format": "󰖩 {essid}",
     "format-disconnected": "󰖪 disconnected"
