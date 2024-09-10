@@ -10,6 +10,11 @@
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
+# Screenshotting
+riverctl map normal None Print spawn "/home/mayv/.config/scripts/screenshot.sh"
+riverctl map normal Super Print spawn "grim $HOME/Pictures/screenshots/screenshot_$(date +'%Y-%m-%d-%H%M%S').png"
+
+
 # Super+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal Super Return spawn kitty
 
@@ -147,6 +152,9 @@ do
     riverctl map $mode None XF86MonBrightnessDown spawn 'brightnessctl set 5%-'
 done
 
+#turn on touchpad
+riverctl input pointer-1267-12691-ELAN06C7:00_04F3:3193_Touchpad tap enabled
+
 # Set background and border color
 riverctl background-color 0x002b36
 riverctl border-color-focused 0x93a1a1
@@ -168,7 +176,8 @@ rivertile -view-padding 6 -outer-padding 6 &
 
 #setup enviroments and run other things that we want
 rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive &
-yambar &
+#yambar &
+waybar &
 wbg "/home/mayv/Pictures/Wallpapers/dragon.jpg" &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlr
 
