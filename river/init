@@ -16,7 +16,7 @@ riverctl map normal Super Print spawn "grim $HOME/Pictures/screenshots/screensho
 
 
 # Super+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
-riverctl map normal Super Return spawn kitty
+riverctl map normal Super Return spawn foot
 
 #Super+D to open fuzzel
 riverctl map normal Super D spawn fuzzel
