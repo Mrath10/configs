@@ -1,4 +1,14 @@
 return {
+  {
+    "tjdevries/express_line.nvim",
+    config = function()
+      require("custom.statusline").setup()
+    end,
+  },
+}
+
+--[[
+return {
   "stevearc/dressing.nvim",
   {
     "nvim-lualine/lualine.nvim",
@@ -32,3 +42,4 @@ return {
   },
   "nvim-tree/nvim-web-devicons"
 }
+]] --

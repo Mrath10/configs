@@ -20,7 +20,7 @@ return {
 
       require("nvim-treesitter.configs").setup({
         -- A list of parser names, or "all" (the five listed parsers should always be installed)
-        ensure_installed = { "javascript", "typescript", "zig", "ocaml", "rust", "lua", "vim", "vimdoc", "query", "blade" },
+        ensure_installed = { "javascript", "python", "typescript", "zig", "ocaml", "rust", "lua", "vim", "vimdoc", "query", "blade" },
         modules = {},
         ignore_install = {},
 

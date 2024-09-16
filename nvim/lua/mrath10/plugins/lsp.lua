@@ -1,6 +1,8 @@
 local servers = {
 	tsserver = {},
 	rust_analyzer = {},
+	pyright = {},
+	clangd = {},
 }
 
 local system_servers = {

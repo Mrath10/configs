@@ -12,7 +12,8 @@ bindkey -v
 #alias#
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias icat='kitten icat'
+#alias icat='kitten icat'
+alias icat='img2sixel'
 alias uqvpn="sudo echo \"Sudo first\" && openconnect https://vpn.uq.edu.au --useragent=AnyConnect --cookieonly | sudo openconnect https://vpn.uq.edu.au --useragent=AnyConnect --cookie-on-stdin"
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
