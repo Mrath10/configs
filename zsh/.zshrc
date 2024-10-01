@@ -61,5 +61,7 @@ fi
 plugin-load $repos
 
 export TERM=xterm-256color
-export PATH=~/matlab/bin:$PATH
+export PATH=~/matlab/bin:$HOME/.cargo/bin:$PATH
 export BROWSER=firefox
+
+. "$HOME/.cargo/env"

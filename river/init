@@ -176,8 +176,8 @@ rivertile -view-padding 6 -outer-padding 6 &
 
 #setup enviroments and run other things that we want
 rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive &
-#yambar &
-waybar &
+yambar &
+#waybar &
 wbg "/home/mayv/Pictures/Wallpapers/dragon.jpg" &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlr
 
