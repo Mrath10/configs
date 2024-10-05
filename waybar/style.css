@@ -1,9 +1,9 @@
 @define-color background #111111;  /*#1a1b26;*/
 @define-color foreground #ffffff;  /*#a9b1d6;*/
-@define-color focused #57bbf4;     /*#bb9af7;*/
-@define-color occupied #fc65b0;    /*#c0caf5;*/
+@define-color focused #f8fe7a;     /* Neovim yellow */
+@define-color occupied #8e6fbd;    /* Neovim purple */
 @define-color empty #d2ccd6;       /*#565f89;*/
-@define-color urgent #ff0000;      /*#f7768e;*/
+@define-color urgent #cc6666;      /* Neovim red */
 @define-color bluetooth #2ac3de;
 
 * {
